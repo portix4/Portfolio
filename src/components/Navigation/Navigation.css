@@ -1,104 +1,84 @@
 .header {
-    background-color: #ffffff;
-    height: 88px;
-    position: relative;
-    width: 1440px;
-    text-decoration: none;
+  background-color: #ffffff;
+  height: 88px;
+  width: auto;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Source Sans Pro-Bold', Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 27px;
 }
 
-
-.header .div-header-logo-img {
-    background-color: #7843e9;
-    border-radius: 50px;
-    height: 50px;
-    left: 50px;
-    overflow: hidden;
-    position: absolute;
-    top: 19px;
-    width: 50px;
+.profile-pic {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  background-color: #7843e9;
+  border-radius: 50px;
+  left: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 19px;
 }
 
-.header .profile-pic {
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 50px;
-}
-
-.header .pablo {
-    color: #333333;
-    font-family: "Source Sans Pro-Bold", Helvetica;
-    font-size: 18px;
-    font-weight: 700;
-    height: 27px;
-    left: 115px;
-    letter-spacing: 1px;
-    line-height: 27px;
-    position: absolute;
-    top: 30px;
-    white-space: nowrap;
-    width: 162px;
-}
-
-.header .list-item-home {
-    color: #333333;
-    font-family: "Source Sans Pro-Bold", Helvetica;
-    font-size: 16px;
-    font-weight: 700;
-    height: 20px;
-    left: 926px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    position: absolute;
-    top: 33px;
-    white-space: nowrap;
-    width: 47px;
-}
-
-.header .list-item-about {
-    color: #333333;
-    font-family: "Source Sans Pro-Bold", Helvetica;
-    font-size: 16px;
-    font-weight: 700;
-    height: 20px;
-    left: 1032px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    position: absolute;
-    top: 33px;
-    white-space: nowrap;
-    width: 55px;
-}
-
-.header .list-item-projects {
-    color: #333333;
-    font-family: "Source Sans Pro-Bold", Helvetica;
-    font-size: 16px;
-    font-weight: 700;
-    height: 20px;
-    left: 1147px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    position: absolute;
-    top: 33px;
-    white-space: nowrap;
-    width: 81px;
-}
-
-.header .list-item-contact {
-    color: #333333;
-    font-family: "Source Sans Pro-Bold", Helvetica;
-    font-size: 16px;
-    font-weight: 700;
-    height: 20px;
-    left: 1287px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    position: absolute;
-    top: 33px;
-    white-space: nowrap;
-    width: 73px;
+.list-item {
+  margin-left: 3em;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: '';
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out; /*taken down to hide quicker*/
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: '';
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+  background-color: var(--bs-gray-100);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
 }
