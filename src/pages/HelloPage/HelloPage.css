@@ -1,0 +1,66 @@
+.HelloPageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #c5c5c5;
+}
+
+.section-hello-i-m {
+  max-width: 80%;
+  margin: 0 auto;
+  color: transparent;
+  font-family: 'Raleway-Regular', Helvetica;
+  font-size: 42.7px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 48px;
+  text-align: center;
+  top: 0;
+  width: 601px;
+}
+
+.text-wrapper {
+  color: #ffffff;
+}
+
+.span {
+  color: #e31b6d;
+}
+
+/* .portfolioButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-color: #ffffff;
+  width: 211px;
+  margin: 2em auto;
+} */
+
+.portfolioButton {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.textButton {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Raleway-Regular', Helvetica;
+  font-size: 21.3px;
+  font-weight: 400;
+  height: 25px;
+  left: 22px;
+  letter-spacing: 0;
+  line-height: 24px;
+  top: 11px;
+  white-space: nowrap;
+  width: 137px;
+  border: solid 3px white;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,11 +1,15 @@
 import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import ProfilePic from './../../assets/profile-pic.jpeg'
 import './Navigation.css'
 
 const Navigation = () => {
   return (
-    <Navbar collapseOnSelect expand='lg' className='bg-body-tertiary header'>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      className='bg-body-tertiary header sticky-lg-top'
+    >
       <Container>
         <Navbar.Brand href='#home'>
           <Row className='align-items-center'>
@@ -15,7 +19,15 @@ const Navigation = () => {
               </div>
             </Col>
             <Col xs={6} md={9} className='mt-3'>
-              <Link to={'#'} className='pablo link' style={{ color: '#333333' }}>
+              <Link
+                to={'helloId'}
+                spy={true}
+                smooth={true}
+                offset={-78}
+                duration={800}
+                className='pablo link'
+                style={{ color: '#333333' }}
+              >
                 PABLO PORTILLO
               </Link>
             </Col>
@@ -24,7 +36,14 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ms-auto mt-3'>
-            <Nav.Link to={'#'} className='list-item link'>
+            <Nav.Link
+              to={'helloId'}
+              spy={true}
+              smooth={true}
+              offset={-78}
+              duration={800}
+              className='list-item link'
+            >
               HOME
             </Nav.Link>
             <Nav.Link to={'#'} className='list-item link'>
