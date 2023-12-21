@@ -5,11 +5,7 @@ import './Navigation.css'
 
 const Navigation = () => {
   return (
-    <Navbar
-      collapseOnSelect
-      expand='lg'
-      className='bg-body-tertiary header sticky-lg-top'
-    >
+    <Navbar collapseOnSelect expand='lg' className='bg-body-tertiary header sticky-top'>
       <Container>
         <Navbar.Brand href='#home'>
           <Row className='align-items-center'>

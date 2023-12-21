@@ -1,12 +1,25 @@
 .AboutMePage {
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  margin: 0;
-  padding: 0;
+  display: flex;
   height: 100vh;
   background-color: #e9e9e9;
+  margin: 0;
+  padding: 0;
 }
-h1 {
+
+.firstContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.underlineAboutMe {
+  display: flex;
+  align-self: center;
+  background: #444649;
+  height: 4px;
+  width: 70px;
+}
+
+.pitch {
+  margin-top: 1em;
 }
