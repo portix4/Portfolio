@@ -23,3 +23,43 @@
 .pitch {
   margin-top: 1em;
 }
+.languages {
+  margin: 1rem;
+}
+.my-skills2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .centerDiv {
+    margin-top: 2em;
+  }
+
+  .who-i-am {
+    padding-right: 50px;
+  }
+  .my-skills {
+    padding-right: 50px;
+  }
+  .centerDiv {
+    /* padding: 100px; */
+    padding: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  h3 {
+    text-align: center;
+  }
+  .centerDiv {
+    /* padding: 100px; */
+    padding: 10px;
+  }
+  .my-skills {
+    margin-top: 2rem;
+  }
+  .my-description {
+    text-align: justify;
+  }
+}

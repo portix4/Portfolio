@@ -32,25 +32,33 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ms-auto mt-3'>
-            <Nav.Link
+            <Link
               to={'helloId'}
               spy={true}
               smooth={true}
               offset={-78}
-              duration={800}
+              duration={1300}
               className='list-item link'
             >
               HOME
-            </Nav.Link>
-            <Nav.Link to={'#'} className='list-item link'>
+            </Link>
+            <Link
+              to={'aboutMe'}
+              spy={true}
+              smooth={true}
+              // smooth='easeOutQuad'
+              offset={-78}
+              duration={1300}
+              className='list-item link'
+            >
               ABOUT
-            </Nav.Link>
-            <Nav.Link to={'#'} className='list-item link'>
+            </Link>
+            <Link to={'#'} className='list-item link'>
               PROJECTS
-            </Nav.Link>
-            <Nav.Link to={'#'} className='list-item link'>
+            </Link>
+            <Link to={'#'} className='list-item link'>
               CONTACT
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
