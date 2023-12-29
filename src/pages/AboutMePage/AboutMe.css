@@ -1,7 +1,7 @@
 .AboutMePage {
   display: flex;
   height: 100vh;
-  background-color: #e9e9e9;
+  background-color: #d8fcf4;
   margin: 0;
   padding: 0;
 }
@@ -23,13 +23,84 @@
 .pitch {
   margin-top: 1em;
 }
-.languages {
+/* .languages {
   margin: 1rem;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  border-radius: 2px;
+  background: var(--tag-bg);
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 0.25em 0.1em;
+  background: #f0db4f;
+  color: #000;
+  font-size: 1.2em;
+  border-radius: 4px;
+} */
+
+.languages {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
 }
+
+.languages {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.languages::before {
+  background: #d8fcf4;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.languages::after {
+  background: #d8fcf4;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.languages:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.languages:hover::after {
+  border-left-color: crimson;
+}
+
+.my-description {
+  margin-top: 2rem;
+}
+
 .my-skills2 {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
+
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .centerDiv {
