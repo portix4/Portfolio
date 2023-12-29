@@ -3,7 +3,7 @@ import Navigation from './components/Navigation/Navigation'
 import AboutMe from './pages/AboutMePage/AboutMe'
 import Footer from './pages/Footer/Footer'
 import HelloPage from './pages/HelloPage/HelloPage'
-import Prueba from './pages/Prueba/Prueba'
+import Projects from './pages/ProjectsPage/Projects'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
 
       <HelloPage />
       <AboutMe />
+      <Projects />
 
       <Footer />
     </div>

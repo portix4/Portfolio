@@ -1,0 +1,17 @@
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.underline {
+  display: flex;
+  align-self: center;
+  background: #444649;
+  height: 4px;
+  width: 70px;
+}

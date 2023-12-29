@@ -7,8 +7,8 @@ const AboutMe = () => {
     <div className='AboutMePage' id='aboutMe'>
       <Container>
         <div className='firstContainer'>
-          <h2 className='pt-4'>ABOUT ME</h2>
-          <div className='underlineAboutMe'></div>
+          <h2 className='pt-4'>About Me</h2>
+          <div className='underline'></div>
           <p className='pitch'>
             Welcome to this space where you can discover more about me, my professional
             projects focused on Full Stack Web Developemnt

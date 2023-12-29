@@ -53,7 +53,15 @@ const Navigation = () => {
             >
               ABOUT
             </Link>
-            <Link to={'#'} className='list-item link'>
+            <Link
+              to={'projects'}
+              spy={true}
+              smooth={true}
+              // smooth='easeOutQuad'
+              offset={-78}
+              duration={1300}
+              className='list-item link'
+            >
               PROJECTS
             </Link>
             <Link to={'#'} className='list-item link'>

@@ -6,20 +6,6 @@
   padding: 0;
 }
 
-.firstContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.underlineAboutMe {
-  display: flex;
-  align-self: center;
-  background: #444649;
-  height: 4px;
-  width: 70px;
-}
-
 .pitch {
   margin-top: 1em;
 }
