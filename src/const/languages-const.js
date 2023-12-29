@@ -5,6 +5,7 @@ export const LANGUAGES = [
   'NodeJS',
   'Express',
   'JavaScript',
+  'Github',
   'HTML',
   'CSS'
 ]

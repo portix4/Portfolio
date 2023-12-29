@@ -24,8 +24,8 @@ const AboutMe = () => {
                 Development and leadership experience as the head of the administrative
                 department. Recently completed a Full-Stack Web Development bootcamp, I'm
                 specialized in JavaScript, HTML5, CSS, NodeJS, Express, MongoDB and React.
-                I look forward to the opportunity to contribute to impactful projects with
-                dedication and precision.
+                I'm looking forward to the opportunity to contribute to impactful projects
+                with dedication and precision.
               </div>
             </Col>
             {/* <Col className='col-sm-12 col-md-6'> */}

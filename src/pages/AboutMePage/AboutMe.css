@@ -81,14 +81,14 @@
   top: 0;
 }
 
-.languages:hover {
+/* .languages:hover {
   background-color: crimson;
   color: white;
 }
 
 .languages:hover::after {
   border-left-color: crimson;
-}
+} */
 
 .my-description {
   margin-top: 2rem;
@@ -129,6 +129,10 @@
   }
   .my-skills {
     margin-top: 2rem;
+  }
+
+  .my-skills2 {
+    justify-content: center;
   }
   .my-description {
     text-align: justify;
