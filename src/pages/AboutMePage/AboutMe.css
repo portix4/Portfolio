@@ -1,13 +1,19 @@
 .AboutMePage {
   display: flex;
-  /* height: 100vh; */
   background-color: #d8fcf4;
   margin: 0;
   padding: 0;
 }
-
+.centerDiv {
+  margin-top: 3rem;
+}
 .pitch {
-  margin-top: 1em;
+  margin-top: 2em;
+}
+
+.my-description {
+  display: flex;
+  align-self: center;
 }
 
 .who-i-am {
@@ -17,6 +23,10 @@
 .photo-and-text {
   display: flex;
   margin-top: 2rem;
+}
+
+.logos {
+  justify-content: center;
 }
 
 .who-i-am img {
@@ -111,11 +121,26 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* .AboutMePage {
+    height: 100vh;
+  } */
+  h3 {
+    text-align: center;
+  }
   .centerDiv {
     margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .photo-and-text {
+    display: flex;
+    margin-top: 2rem;
   }
 
+  .my-skills {
+    margin-top: 2rem;
+  }
   /* .my-skills {
     padding-right: 50px;
   } */
@@ -125,8 +150,8 @@
   }
 
   .who-i-am img {
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: auto;
     clip-path: polygon(
       20% 0%,
       80% 0%,
@@ -142,6 +167,34 @@
     object-fit: cover;
     border-radius: 20%;
     margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .who-i-am img {
+    width: 15%;
+    height: auto;
+    clip-path: polygon(
+      20% 0%,
+      80% 0%,
+      100% 20%,
+      100% 80%,
+      80% 100%,
+      20% 100%,
+      0% 80%,
+      0% 20%,
+      round 10%
+    );
+    /* object-fit: scale-down; */
+    object-fit: cover;
+    border-radius: 20%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .AboutMePage {
+    height: 100vh;
   }
 }
 

@@ -28,7 +28,7 @@ const AboutMe = () => {
         <div className='centerDiv'>
           <Row>
             {/* <Col className='col-sm-12 col-md-6'> */}
-            <Col md={6} className='who-i-am'>
+            <Col xl={6} className='who-i-am'>
               <h3>Who am I?</h3>
               <div className='photo-and-text'>
                 <img src={ProfilePhoto} alt='Profile picture' />
@@ -43,7 +43,7 @@ const AboutMe = () => {
               </div>
             </Col>
             {/* <Col className='col-sm-12 col-md-6'> */}
-            <Col md={6} className='my-skills'>
+            <Col xl={6} className='my-skills'>
               <h3>My Skills</h3>
               <div className='logos'>
                 <LogoJS />
