@@ -6,6 +6,12 @@ import HTML5Logo from '../../assets/html5-logo'
 import CSS3Logo from '../../assets/css3-logo'
 import BootstrapLogo from '../../assets/bootstrap-logo'
 import PostmanLogo from '../../assets/postman-logo'
+import GitLogo from '../../assets/git-logo'
+import NodeJS from './../../assets/nodejs-logo'
+import ExpressJS from '../../assets/express-logo'
+import MongoDB from '../../assets/mongodb-logo'
+import ReactLogo from '../../assets/react-logo'
+import ProfilePhoto from '../../assets/profile-pic.jpeg'
 
 const AboutMe = () => {
   return (
@@ -24,13 +30,16 @@ const AboutMe = () => {
             {/* <Col className='col-sm-12 col-md-6'> */}
             <Col md={6} className='who-i-am'>
               <h3>Who am I?</h3>
-              <div className='my-description'>
-                Tech enthusiast turned Front-End Developer, with a degree in Application
-                Development and leadership experience as the head of the administrative
-                department. Recently completed a Full-Stack Web Development bootcamp, I'm
-                specialized in JavaScript, HTML5, CSS, NodeJS, Express, MongoDB and React.
-                I'm looking forward to the opportunity to contribute to impactful projects
-                with dedication and precision.
+              <div className='photo-and-text'>
+                <img src={ProfilePhoto} alt='Profile picture' />
+                <div className='my-description'>
+                  Tech enthusiast turned Front-End Developer, with a degree in Application
+                  Development and leadership experience as the head of the administrative
+                  department. Recently completed a Full-Stack Web Development bootcamp,
+                  I'm specialized in JavaScript, HTML5, CSS, NodeJS, Express, MongoDB and
+                  React. I'm looking forward to the opportunity to contribute to impactful
+                  projects with dedication and precision.
+                </div>
               </div>
             </Col>
             {/* <Col className='col-sm-12 col-md-6'> */}
@@ -41,7 +50,12 @@ const AboutMe = () => {
                 <HTML5Logo />
                 <CSS3Logo />
                 <BootstrapLogo />
-                <PostmanLogo style={{ width: '80px' }} />
+                <PostmanLogo />
+                <GitLogo />
+                <NodeJS />
+                <ExpressJS />
+                <MongoDB />
+                <ReactLogo />
               </div>
               {/* <div className='my-skills2'>
                 {CLASS_CONSTS.LANGUAGES.map(language => (

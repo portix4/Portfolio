@@ -1,6 +1,6 @@
 .AboutMePage {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #d8fcf4;
   margin: 0;
   padding: 0;
@@ -10,12 +10,36 @@
   margin-top: 1em;
 }
 
-.my-description {
+.who-i-am {
+  padding-right: 50px;
+}
+
+.photo-and-text {
+  display: flex;
   margin-top: 2rem;
 }
 
+.who-i-am img {
+  width: 30%;
+  height: auto;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%,
+    round 10%
+  );
+  /* object-fit: scale-down; */
+  object-fit: cover;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+
 .logos {
-  margin-top: 2rem;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +47,7 @@
 }
 
 .logos svg {
+  margin-top: 2rem;
   max-width: 80px;
   margin-right: 30px;
 }
@@ -91,15 +116,32 @@
     margin-top: 2em;
   }
 
-  .who-i-am {
+  /* .my-skills {
     padding-right: 50px;
-  }
-  .my-skills {
-    padding-right: 50px;
-  }
+  } */
   .centerDiv {
     /* padding: 100px; */
     padding: 40px;
+  }
+
+  .who-i-am img {
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(
+      20% 0%,
+      80% 0%,
+      100% 20%,
+      100% 80%,
+      80% 100%,
+      20% 100%,
+      0% 80%,
+      0% 20%,
+      round 10%
+    );
+    /* object-fit: scale-down; */
+    object-fit: cover;
+    border-radius: 20%;
+    margin-right: 20px;
   }
 }
 
@@ -111,6 +153,11 @@
     /* padding: 100px; */
     padding: 10px;
   }
+
+  .logos {
+    justify-content: center;
+  }
+
   .my-skills {
     margin-top: 2rem;
   }
