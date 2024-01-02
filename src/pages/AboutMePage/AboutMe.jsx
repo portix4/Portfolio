@@ -1,6 +1,11 @@
 import './AboutMe.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import * as CLASS_CONSTS from '../../const/languages-const'
+import LogoJS from '../../assets/js-logo'
+import HTML5Logo from '../../assets/html5-logo'
+import CSS3Logo from '../../assets/css3-logo'
+import BootstrapLogo from '../../assets/bootstrap-logo'
+import PostmanLogo from '../../assets/postman-logo'
 
 const AboutMe = () => {
   return (
@@ -31,11 +36,18 @@ const AboutMe = () => {
             {/* <Col className='col-sm-12 col-md-6'> */}
             <Col md={6} className='my-skills'>
               <h3>My Skills</h3>
-              <div className='my-skills2'>
+              <div className='logos'>
+                <LogoJS />
+                <HTML5Logo />
+                <CSS3Logo />
+                <BootstrapLogo />
+                <PostmanLogo style={{ width: '80px' }} />
+              </div>
+              {/* <div className='my-skills2'>
                 {CLASS_CONSTS.LANGUAGES.map(language => (
                   <div className='languages'>{language}</div>
                 ))}
-              </div>
+              </div> */}
             </Col>
           </Row>
         </div>
