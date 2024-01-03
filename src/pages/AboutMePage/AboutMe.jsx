@@ -1,6 +1,5 @@
 import './AboutMe.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import * as CLASS_CONSTS from '../../const/languages-const'
 import LogoJS from '../../assets/js-logo'
 import HTML5Logo from '../../assets/html5-logo'
 import CSS3Logo from '../../assets/css3-logo'

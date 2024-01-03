@@ -1,4 +1,4 @@
-import { Container, Col } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 import './Projects.css'
 import { useState } from 'react'
 import foto from './../../assets/profile-pic.jpeg'
@@ -13,13 +13,15 @@ const Projects = () => {
           <h2 className='pt-4'>Projects</h2>
           <div className='underline'></div>
         </div>
-        {PROJECT_CONSTS.PROJECTS.map(elm => {
-          return (
-            <Col md={4}>
-              <ProjectCards {...elm} key={elm._id} />
-            </Col>
-          )
-        })}
+        <Row>
+          {PROJECT_CONSTS.PROJECTS.map(elm => {
+            return (
+              <Col md={4}>
+                <ProjectCards {...elm} key={elm._id} />
+              </Col>
+            )
+          })}
+        </Row>
 
         {/* <div
           className={`flip-card ${isFlipped ? 'flipped' : ''}`}

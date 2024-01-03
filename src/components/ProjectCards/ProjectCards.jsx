@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Container } from 'react-bootstrap'
+import { Card, Container } from 'react-bootstrap'
+import image1 from './../../assets/IronSlugPlay1.png'
 
-const ProjectCards = ({ name, prueba }) => {
+const ProjectCards = ({ name, src, prueba }) => {
   const [isFlipped, setFlipped] = useState(false)
 
   const handleMouseEnter = () => {
@@ -19,11 +20,9 @@ const ProjectCards = ({ name, prueba }) => {
         onMouseLeave={handleMouseLeave}
       >
         <div className='flip-card-inner'>
-          <div className='flip-card-front'>
-            <div style={{ backgroundColor: 'green' }}>
-              <p>Texto en la cara delantera</p>
-            </div>
-          </div>
+          <Card className='flip-card-front'>
+            <Card.Img src={src} />
+          </Card>
           <div className='flip-card-back'>
             <div style={{ backgroundColor: 'red' }}>
               <p>{name}</p>

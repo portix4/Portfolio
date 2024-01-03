@@ -1,5 +1,5 @@
 export const PROJECTS = [
-  { name: 'IronSlug', prueba: 'prueba1' },
-  { name: 'FlickMeet', prueba: 'prueba2' },
-  { name: 'Code Conect', prueba: 'prueba3' }
+  { name: 'IronSlug', src: image1, prueba: 'prueba1' },
+  { name: 'FlickMeet', src: image1, prueba: 'prueba2' },
+  { name: 'Code Conect', src: image1, prueba: 'prueba3' }
 ]
