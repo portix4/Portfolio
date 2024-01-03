@@ -58,7 +58,7 @@
 
 .logos svg {
   margin-top: 2rem;
-  max-width: 80px;
+  width: 13%;
   margin-right: 30px;
 }
 
@@ -196,6 +196,9 @@
   .AboutMePage {
     height: 100vh;
   }
+  h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -220,5 +223,9 @@
   }
   .my-description {
     text-align: justify;
+  }
+
+  .centerDiv {
+    margin-bottom: 2em;
   }
 }

@@ -1,0 +1,45 @@
+.Projects {
+  display: flex;
+  height: 100vh;
+  background-color: #eeffca;
+  margin: 0;
+  padding: 0;
+}
+
+.flip-card {
+  /* perspective: 1000px; */
+  width: 5em;
+  height: auto;
+  /* position: relative; */
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card img {
+  width: 100%;
+  height: auto;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: auto;
+  height: auto;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Personaliza según tus necesidades */
