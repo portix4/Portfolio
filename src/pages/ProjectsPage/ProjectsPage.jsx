@@ -2,14 +2,38 @@ import { Container, Col, Row } from 'react-bootstrap'
 import './ProjectsPage.css'
 import ProjectCards from '../../components/ProjectCards/ProjectCards'
 import image1 from './../../assets/IronSlugPlay1.png'
+import image1b from './../../assets/IronSlugStart.png'
+import image2 from './../../assets/FlickMeet1.png'
+import image3 from './../../assets/CodeConnect1.png'
 
 const ProjectsPage = () => {
   const PROJECTS = [
-    { name: 'IronSlug', src: image1, prueba: 'prueba1' },
-    { name: 'FlickMeet', src: image1, prueba: 'prueba2' },
-    { name: 'Code Conect', src: image1, prueba: 'prueba3' },
-    { name: 'Code Conect', src: image1, prueba: 'prueba3' },
-    { name: 'Code Conect2', src: image1, prueba: 'prueba4' }
+    {
+      name: 'IronSlug',
+      src: [image1, image1b],
+      description:
+        '2D Arcade Game. In this project, the initial knowledge acquired with HTML, CSS, and JavaScript was applied. The challenge of this task is to work with the DOM and the creation of classes using JavaScript',
+      tools: 'HMTL5 | CSS | Javascript',
+      URL: 'https://portix4.github.io/IH-Project1-Game2D/'
+    },
+    {
+      name: 'FlickMeet',
+      src: [image2],
+      description:
+        'Movie rating website project that uses an external API as its primary database, integrates Express.js and MongoDB for server-side functionalities, and incorporates Handlebars for streamlined and dynamic views',
+      tools:
+        'HMTL5 | CSS | Javascript | Mongoose | Handlebars.js | Google Maps API | Postman | Express.js | JavaScript | MongoDB | Node.js',
+      URL: 'https://flickmeet2.fly.dev/'
+    },
+    {
+      name: 'Code Conect',
+      src: [image3],
+      description:
+        'Online tutoring platform. Full Stack Application (MERN) using MongoDB for the database, Express and Node.js for the backend, and React for the frontend.',
+      tools:
+        'HMTL5 | CSS | Javascript | Mongoose | Google Maps API | Postman | Express.js | MongoDB | Node.js | ReactJS',
+      URL: 'https://code-connectt.netlify.app/'
+    }
   ]
 
   return (
