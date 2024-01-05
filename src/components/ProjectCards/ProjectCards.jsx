@@ -1,13 +1,10 @@
 import { useState } from 'react'
 import { Card, Container, Button, Modal, Form, Carousel } from 'react-bootstrap'
 import './ProjectCards.css'
+import { Link } from 'react-router-dom'
 
 const ProjectCards = ({ name, src, description, tools, URL }) => {
   const [showModal, setShowModal] = useState(false)
-
-  const finalActions = () => {
-    setShowModal(false)
-  }
 
   return (
     <div className='ProjectCards'>
@@ -25,7 +22,7 @@ const ProjectCards = ({ name, src, description, tools, URL }) => {
           onClick={() => setShowModal(true)}
         >
           + details
-        </Button>{' '}
+        </Button>
       </div>
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
@@ -34,36 +31,27 @@ const ProjectCards = ({ name, src, description, tools, URL }) => {
         </Modal.Header>
         <Modal.Body className='bodyRequestModalClass'>
           <Carousel>
-            {async () => {
-                for (const item of {src})
-                {
-                  await new Promise(resolve =>
-                    setTimeout(() => {
-                      <Carousel.Item>
-                        <img src={item} />
-                      </Carousel.Item>
-                      resolve()
-                    }, 1000)
-                  )
-                }
-            }}
-
-            {/* <Carousel.Item interval={2500}>
-              <img src={src[0]} />
-            </Carousel.Item>
-            <Carousel.Item interval={2500}>
-              <img src={src[1]} />
-            </Carousel.Item> */}
-            {/* {src.forEach(elm => {
-              ;<Carousel.Item interval={1000}>
-                <img src={elm} alt='picture' />
+            {src.map((item, index) => (
+              <Carousel.Item key={index} interval={2500}>
+                <img src={item} alt={`Slide ${index}`} />
               </Carousel.Item>
-            })} */}
+            ))}
           </Carousel>
-          <Button className='requestButtonModal' onClick={finalActions}>
-            No
-          </Button>
         </Modal.Body>
+        <hr />
+        <div className='description'>{description}</div>
+        <hr />
+        <div className='link-and-close'>
+          <Link to={URL} target='_blank'>
+            <button>VIEW SITE</button>
+          </Link>
+          <button
+            onClick={() => setShowModal(false)}
+            type='button'
+            class='btn-close'
+            aria-label='Close'
+          ></button>
+        </div>
       </Modal>
     </div>
   )

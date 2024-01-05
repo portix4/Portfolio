@@ -75,3 +75,22 @@ h3 {
   width: 500px;
   height: auto;
 }
+
+.modal-header .btn-close {
+  display: none;
+}
+
+.description {
+  margin: 0 1em;
+}
+
+.link-and-close {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em 1em 1em;
+}
+
+/* .btn-close {
+  margin: 1em;
+  align-self: flex-end;
+} */

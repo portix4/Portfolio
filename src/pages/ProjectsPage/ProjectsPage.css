@@ -1,6 +1,5 @@
 .Projects {
   display: flex;
-  height: 100vh;
   background-color: #eeffca;
   margin: 0;
   padding: 0;
@@ -56,3 +55,9 @@
 .flip-card-back {
   transform: rotateY(180deg);
 } */
+
+@media (min-width: 768px) {
+  .Projects {
+    height: 100vh;
+  }
+}

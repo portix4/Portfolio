@@ -1,7 +1,7 @@
+import Contact from '../../components/Contact/Contact'
+
 const Footer = () => {
-    return (
-        <div>footer</div>
-    )
+  return <Contact />
 }
 
 export default Footer
