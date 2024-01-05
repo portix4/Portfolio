@@ -1,0 +1,12 @@
+.Contact {
+  width: 400px;
+  align-self: center;
+}
+
+.form-control {
+  margin: 2px;
+}
+
+.textareaForm {
+  height: 80px;
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { Form, Container, Button } from 'react-bootstrap'
+import './Contact.css'
 
 const Contact = () => {
   const form = useRef()
@@ -42,12 +43,17 @@ const Contact = () => {
       <Container>
         <Form ref={form} onSubmit={sendEmail}>
           <Form.Group className='mb-3' controlId='formBasicEmail'>
-            <Form.Label>Name</Form.Label>
+            {/* <Form.Label>Name</Form.Label> */}
             <Form.Control type='text' placeholder='Name' name='user_name' />
-            <Form.Label>Enter email</Form.Label>
+            {/* <Form.Label>Enter email</Form.Label> */}
             <Form.Control type='email' placeholder='Enter email' name='user_email' />
-            <Form.Label>Your Message</Form.Label>
-            <Form.Control type='textarea' name='message' placeholder='Your message' />
+            {/* <Form.Label>Your Message</Form.Label> */}
+            <Form.Control
+              as='textarea'
+              name='message'
+              placeholder='Your message'
+              className='textareaForm'
+            />
           </Form.Group>
           <Button variant='primary' type='submit' value='Send' disabled={isSubmitting}>
             Submit
@@ -55,17 +61,6 @@ const Contact = () => {
           {stateMessage && <p>{stateMessage}</p>}
         </Form>
       </Container>
-
-      {/* <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type='text' name='user_name' />
-        <label>Email</label>
-        <input type='email' name='user_email' />
-        <label>Message</label>
-        <textarea name='message' />
-        <input type='submit' value='Send' disabled={isSubmitting} />
-        {stateMessage && <p>{stateMessage}</p>}
-      </form> */}
     </div>
   )
 }
