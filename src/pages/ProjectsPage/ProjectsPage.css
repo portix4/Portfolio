@@ -1,6 +1,6 @@
 .Projects {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #eeffca;
   margin: 0;
   padding: 0;
@@ -13,30 +13,28 @@
 }
 
 .cards {
-  width: 20em;
-  height: 20em;
+  width: 300px;
+  height: 300px;
+  padding-right: 0;
+  padding-left: 0;
+  /* background-color: red; */
 }
 
-.flip-card {
-  /* perspective: 1000px; */
-  width: 100%;
-  height: auto;
-  /* position: relative; */
+/* .flip-card {
+  width: auto;
+  height: fit-content;
   transform-style: preserve-3d;
   transition: transform 1s;
 }
 
-.flip-card img {
+.flip-card-inner img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
 }
 
-/* THIS OPTIONS WORKS WITH CSS */
-/* .flip-card:hover {
-  transform: rotateY(180deg);
-} */
 
-/* THIS OPTION WORKS WITH HOOKS */
 .flipped {
   transform: rotateY(180deg);
 }
@@ -57,6 +55,4 @@
 
 .flip-card-back {
   transform: rotateY(180deg);
-}
-
-/* Personaliza según tus necesidades */
+} */
