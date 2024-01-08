@@ -3,6 +3,35 @@
   justify-content: center;
 }
 
+.PostFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.postFooterText,
+.rights {
+  text-align: center;
+  margin: 1rem 0;
+}
+
 .logosFooter {
   display: flex;
+  height: 50px;
+  justify-content: center;
+}
+.githubdiv,
+.linkedindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg {
+  width: 20%;
+  height: auto;
+}
+
+img {
+  width: 25%;
+  height: auto;
 }

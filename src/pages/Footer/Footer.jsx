@@ -1,6 +1,7 @@
 import Contact from '../../components/Contact/Contact'
 import { Container } from 'react-bootstrap'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 import GithubLogo from '../../assets/github-logo'
 import LinkedinLogo from '../../assets/linkedin-logo'
 import GithubImg from './../../assets/github-mark.png'
@@ -22,14 +23,19 @@ const Footer = () => {
             Feel free to connect with me on my social media platforms!
           </span>
           <div className='logosFooter'>
-            <div className='githubdiv'>
+            {' '}
+            <Link to={'https://github.com/portix4'} target='_blank' className='githubdiv'>
               <img src={GithubImg} alt='' />
-            </div>
-            <div className='linkedindiv'>
-              <LinkedinLogo />
-            </div>
+            </Link>
+            <Link
+              to={'https://www.linkedin.com/in/pabloportillodev/'}
+              target='_blank'
+              className='linkedindiv'
+            >
+              <LinkedinLogo className='linkedingLogo' />
+            </Link>
           </div>
-          <span className='rights'>PABLO PORTILLO © 2024</span>
+          <span className='rights mt-4'>PABLO PORTILLO © 2024</span>
         </div>
       </Container>
     </div>
