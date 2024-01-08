@@ -10,7 +10,9 @@ import NodeJS from './../../assets/nodejs-logo'
 import ExpressJS from '../../assets/express-logo'
 import MongoDB from '../../assets/mongodb-logo'
 import ReactLogo from '../../assets/react-logo'
-import ProfilePhoto from '../../assets/profile-pic.jpeg'
+// import ProfilePhoto from '../../assets/profile-pic.jpeg'
+import ProfilePhoto from '../../assets/foto-perfil-02.jpg'
+// import ProfilePhoto from '../../assets/foto-perfil-01.png'
 
 const AboutMe = () => {
   return (
@@ -28,9 +30,9 @@ const AboutMe = () => {
           <Row>
             {/* <Col className='col-sm-12 col-md-6'> */}
             <Col xl={6} className='who-i-am'>
-              <h3>Who am I?</h3>
               <div className='photo-and-text'>
                 <img src={ProfilePhoto} alt='Profile picture' />
+                <h3>Who am I?</h3>
                 <div className='my-description'>
                   Tech enthusiast turned Front-End Developer, with a degree in Application
                   Development and leadership experience as the head of the administrative

@@ -55,7 +55,12 @@ const Contact = () => {
               className='textareaForm'
             />
           </Form.Group>
-          <Button variant='primary' type='submit' value='Send' disabled={isSubmitting}>
+          <Button
+            className='textButton'
+            type='submit'
+            value='Send'
+            disabled={isSubmitting}
+          >
             Submit
           </Button>
           {stateMessage && <p>{stateMessage}</p>}

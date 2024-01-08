@@ -1,10 +1,10 @@
 .header {
-  background-color: #ffffff;
+  background-color: white;
   height: 88px;
   width: auto;
   text-decoration: none;
   color: #333333;
-  font-family: 'Source Sans Pro-Bold', Helvetica;
+  /* font-family: 'Source Sans Pro-Bold', Helvetica; */
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -14,14 +14,16 @@
 .profile-pic {
   background-position: 50% 50%;
   background-size: cover;
-  height: 50px;
-  width: 50px;
-  background-color: #7843e9;
-  border-radius: 50px;
+  /* height: 50px;
+  width: 50px; */
+  max-width: 100px;
+  /* background-color: #7843e9; */
+  /* border-radius: 50px; */
   left: 50px;
   overflow: hidden;
-  position: absolute;
-  top: 19px;
+  /* position: absolute; */
+  /* top: 19px; */
+  margin-top: -7px;
 }
 
 .list-item {
@@ -32,6 +34,25 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+.link:hover {
+  color: #58b88e;
+}
+
+.navbar-brand a {
+  margin-left: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  padding-top: 8px;
+}
+.navbar-nav .textButton {
+  margin-left: 3em;
+  min-width: 100px;
+}
+
+.ms-auto.mt-3.navbar-nav {
+  align-items: center;
 }
 
 .navbar-toggler-icon {
@@ -83,4 +104,20 @@
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
   transform: rotate(-90deg) translateX(7px);
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: auto;
+  }
+
+  .list-item,
+  .navbar-nav .textButton {
+    margin-left: 0px;
+    margin-top: 3em;
+  }
+
+  .navbar-nav .textButton {
+    margin-bottom: 3em;
+  }
 }

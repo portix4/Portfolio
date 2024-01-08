@@ -4,14 +4,48 @@
   text-align: center;
 }
 
+h1,
 h2 {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
+
+h2 {
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
 .underline {
   display: flex;
   align-self: center;
-  background: #444649;
+  background: #58b88e;
   height: 4px;
   width: 70px;
+}
+
+.textButton {
+  text-align: center;
+  color: #00ff8f;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+  white-space: nowrap;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 30px;
+  transition: all ease 1s;
+}
+
+body {
+  font-family: 'Raleway';
 }

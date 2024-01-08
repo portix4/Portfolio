@@ -4,9 +4,24 @@
 }
 
 .form-control {
-  margin: 2px;
+  margin: 5px;
 }
 
 .textareaForm {
   height: 80px;
+}
+
+.Contact .textButton {
+  margin-top: 1em;
+}
+
+.Contact input {
+  /* border-radius: 30px; */
+  border: solid grey 1px;
+  margin-bottom: 20px;
+}
+
+.Contact textarea {
+  /* border-radius: 30px; */
+  border: solid grey 1px;
 }

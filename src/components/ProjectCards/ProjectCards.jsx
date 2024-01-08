@@ -14,15 +14,18 @@ const ProjectCards = ({ name, src, description, tools, URL }) => {
 
       <div className='box2'>
         <h3 className='mt-5'>{name}</h3>
-        <span className='tools'>{tools}</span>
-        <Button
-          variant='secondary'
-          className='buttonCard'
-          size='sm'
-          onClick={() => setShowModal(true)}
-        >
-          + details
-        </Button>
+        <div className='tools_button'>
+          <span className='tools'>{tools}</span>
+          <Button
+            // variant='secondary'
+            // className='buttonCard'
+            className='textButton'
+            // size='sm'
+            onClick={() => setShowModal(true)}
+          >
+            + details
+          </Button>
+        </div>
       </div>
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
@@ -38,12 +41,10 @@ const ProjectCards = ({ name, src, description, tools, URL }) => {
             ))}
           </Carousel>
         </Modal.Body>
-        <hr />
         <div className='description'>{description}</div>
-        <hr />
         <div className='link-and-close'>
-          <Link to={URL} target='_blank'>
-            <button>VIEW SITE</button>
+          <Link to={URL} target='_blank' active style={{ textDecoration: 'none' }}>
+            <div className='textButton'>VIEW SITE</div>
           </Link>
           <button
             onClick={() => setShowModal(false)}

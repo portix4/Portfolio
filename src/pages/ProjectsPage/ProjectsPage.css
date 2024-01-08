@@ -1,8 +1,14 @@
 .Projects {
   display: flex;
-  background-color: #eeffca;
+  background-color: #1a1a1a;
   margin: 0;
-  padding: 0;
+  /* padding: 0;
+   */
+  padding-bottom: 4em;
+}
+
+.Projects h2 {
+  color: white;
 }
 
 .ProjectsCards {
@@ -56,7 +62,7 @@
   transform: rotateY(180deg);
 } */
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .Projects {
     height: 100vh;
   }

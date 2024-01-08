@@ -9,8 +9,7 @@
   justify-content: center;
 }
 
-.postFooterText,
-.rights {
+.postFooterText {
   text-align: center;
   margin: 1rem 0;
 }
@@ -31,7 +30,14 @@ svg {
   height: auto;
 }
 
-img {
+.Footer img {
   width: 25%;
   height: auto;
+}
+
+.rights {
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
 }

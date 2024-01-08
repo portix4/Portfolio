@@ -26,7 +26,7 @@ const ProjectsPage = () => {
       description:
         'Movie rating website project that uses an external API as its primary database, integrates Express.js and MongoDB for server-side functionalities, and incorporates Handlebars for streamlined and dynamic views',
       tools:
-        'HMTL5 | CSS | Javascript | Mongoose | Handlebars.js | Google Maps API | Postman | Express.js | JavaScript | MongoDB | Node.js',
+        'HMTL5 | CSS | Javascript | Mongoose | Handlebars.js | Postman | Express.js | MongoDB | Node.js',
       URL: 'https://flickmeet2.fly.dev/'
     },
     {
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
       description:
         'Online tutoring platform. Full Stack Application (MERN) using MongoDB for the database, Express and Node.js for the backend, and React for the frontend.',
       tools:
-        'HMTL5 | CSS | Javascript | Mongoose | Google Maps API | Postman | Express.js | MongoDB | Node.js | ReactJS',
+        'HMTL5 | CSS | Javascript | Mongoose | Postman | Express.js | MongoDB | Node.js | ReactJS',
       URL: 'https://code-connectt.netlify.app/'
     }
   ]

@@ -28,6 +28,13 @@
   flex-direction: column;
   max-height: 100%;
   opacity: 0;
+  background-color: white;
+}
+
+.tools_button {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 }
 
 .ProjectCards:hover .box1 {
@@ -51,22 +58,24 @@
 
 h3 {
   font-size: 16pt;
-  font-family: 'Raleway-bold';
+  /* font-family: 'Raleway-bold'; */
 }
 
 .tools {
   margin-top: 1em;
   font-weight: bold;
-  color: #e31b6d;
+  color: #58b88e;
   font-family: 'Raleway';
   -webkit-font-smoothing: antialiased;
   text-align: center;
+  min-height: 120px;
 }
 
-.buttonCard {
+.ProjectCards .textButton {
   align-self: center;
   width: 150px;
-  margin-top: 5em;
+  /* margin-top: 3em; */
+  border: black;
 }
 
 .titleModalRequestClass {
@@ -90,7 +99,17 @@ h3 {
 .link-and-close {
   display: flex;
   justify-content: space-between;
-  margin: 0 1em 1em 1em;
+  margin: 2em 1em 1em 1em;
+  align-items: flex-end;
+}
+
+.titleModalRequestClass {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.link-and-close .textButton {
+  margin-top: 1em;
 }
 
 /* .btn-close {

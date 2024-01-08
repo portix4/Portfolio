@@ -1,6 +1,7 @@
 import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-scroll'
-import ProfilePic from './../../assets/profile-pic.jpeg'
+// import ProfilePic from './../../assets/profile-pic.jpeg'
+import personalLogo from './../../assets/logo-portillo.png'
 import './Navigation.css'
 
 const Navigation = () => {
@@ -9,16 +10,12 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand href='#home'>
           <Row className='align-items-center'>
-            <Col xs={6} md={3} className='mb-3'>
-              <div className='logo'>
-                <img className='profile-pic' src={ProfilePic} alt='profile picture' />
-              </div>
-            </Col>
-            <Col xs={6} md={9} className='mt-3'>
+            <Col xs={6} md={3}>
+              <img className='profile-pic' src={personalLogo} alt='profile picture' />
               <Link
                 to={'helloId'}
                 spy={true}
-                smooth={true}
+                // smooth={true}
                 offset={-78}
                 duration={800}
                 className='pablo link'
@@ -35,7 +32,7 @@ const Navigation = () => {
             <Link
               to={'helloId'}
               spy={true}
-              smooth={true}
+              // smooth={true}
               offset={-78}
               duration={1300}
               className='list-item link'
@@ -45,7 +42,7 @@ const Navigation = () => {
             <Link
               to={'aboutMe'}
               spy={true}
-              smooth={true}
+              // smooth={true}
               // smooth='easeOutQuad'
               offset={-78}
               duration={1300}
@@ -56,7 +53,7 @@ const Navigation = () => {
             <Link
               to={'projects'}
               spy={true}
-              smooth={true}
+              // smooth={true}
               // smooth='easeOutQuad'
               offset={-78}
               duration={1300}
@@ -67,7 +64,7 @@ const Navigation = () => {
             <Link
               to={'footerId'}
               spy={true}
-              smooth={true}
+              // smooth={true}
               // smooth='easeOutQuad'
               offset={-78}
               duration={1300}
@@ -75,6 +72,16 @@ const Navigation = () => {
             >
               CONTACT
             </Link>
+
+            <a
+              href={
+                'https://drive.google.com/file/d/186UL9yBT-19s1_SVo1THhTKBBpZbFS7j/view?usp=sharing'
+              }
+              target='_blank'
+              style={{ textDecoration: 'none' }}
+            >
+              <div className='textButton'>CV</div>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>

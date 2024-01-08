@@ -18,7 +18,7 @@ const Footer = () => {
           <Contact />
         </div>
 
-        <div className='PostFooter'>
+        <div className='PostFooter mt-5'>
           <span className='postFooterText'>
             Feel free to connect with me on my social media platforms!
           </span>
@@ -35,9 +35,9 @@ const Footer = () => {
               <LinkedinLogo className='linkedingLogo' />
             </Link>
           </div>
-          <span className='rights mt-4'>PABLO PORTILLO © 2024</span>
         </div>
       </Container>
+      <div className='rights mt-4'>PABLO PORTILLO © 2024</div>
     </div>
   )
 }
