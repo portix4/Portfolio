@@ -63,4 +63,9 @@
   padding: 10px 15px;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.textButton:hover {
+  background-color: #e31b6d;
 }

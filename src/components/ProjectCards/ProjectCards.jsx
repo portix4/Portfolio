@@ -32,7 +32,7 @@ const ProjectCards = ({ name, src, description, tools, URL }) => {
         <Modal.Body className='bodyRequestModalClass'>
           <Carousel>
             {src.map((item, index) => (
-              <Carousel.Item key={index} interval={2500}>
+              <Carousel.Item key={index} interval={2000}>
                 <img src={item} alt={`Slide ${index}`} />
               </Carousel.Item>
             ))}
