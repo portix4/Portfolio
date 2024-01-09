@@ -1,8 +1,16 @@
-# React + Vite
+# Pablo Portillo Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio website built in React to showcase my technical skills, web design skills and my projects:
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+HTML5
+CSS3
+JavaScript (ES6)
+Git
+GitHub
+React
+Node JS
+
+## <ins>Visual</ins>
+<img width="944" alt="image" src="https://github.com/portix4/Portfolio/assets/138901550/d0e1c217-0ed3-4e49-9e18-eeabb41f4181">
