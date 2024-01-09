@@ -43,13 +43,13 @@ const ProjectCards = ({ name, src, description, tools, URL }) => {
         </Modal.Body>
         <div className='description'>{description}</div>
         <div className='link-and-close'>
-          <Link to={URL} target='_blank' active style={{ textDecoration: 'none' }}>
+          <Link to={URL} target='_blank' style={{ textDecoration: 'none' }}>
             <div className='textButton'>VIEW SITE</div>
           </Link>
           <button
             onClick={() => setShowModal(false)}
             type='button'
-            class='btn-close'
+            className='btn-close'
             aria-label='Close'
           ></button>
         </div>

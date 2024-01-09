@@ -3,7 +3,7 @@
   height: 88px;
   width: auto;
   text-decoration: none;
-  color: #333333;
+  color: black;
   /* font-family: 'Source Sans Pro-Bold', Helvetica; */
   font-size: 18px;
   font-weight: 700;
@@ -16,7 +16,7 @@
   background-size: cover;
   /* height: 50px;
   width: 50px; */
-  max-width: 100px;
+  max-width: 80px;
   /* background-color: #7843e9; */
   /* border-radius: 50px; */
   left: 50px;
@@ -49,6 +49,10 @@
 .navbar-nav .textButton {
   margin-left: 3em;
   min-width: 100px;
+}
+
+.navbar-expand-lg .navbar-nav {
+  align-items: center;
 }
 
 .ms-auto.mt-3.navbar-nav {

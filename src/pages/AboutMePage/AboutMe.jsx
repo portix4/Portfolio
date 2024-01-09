@@ -23,7 +23,7 @@ const AboutMe = () => {
           <div className='underline'></div>
           <p className='pitch'>
             Welcome to this space where you can discover more about me, my professional
-            projects focused on Full Stack Web Developemnt
+            projects focused on Full Stack Web Development
           </p>
         </div>
         <div className='centerDiv'>
@@ -34,12 +34,14 @@ const AboutMe = () => {
                 <img src={ProfilePhoto} alt='Profile picture' />
                 <h3>Who am I?</h3>
                 <div className='my-description'>
-                  Tech enthusiast turned Front-End Developer, with a degree in Application
-                  Development and leadership experience as the head of the administrative
-                  department. Recently completed a Full-Stack Web Development bootcamp,
-                  I'm specialized in JavaScript, HTML5, CSS, NodeJS, Express, MongoDB and
-                  React. I'm looking forward to the opportunity to contribute to impactful
-                  projects with dedication and precision.
+                  Tech enthusiast turned Front-End Developer, holding a degree in
+                  Application Development and boasting leadership experience as the head
+                  of the administrative department. I have recently completed a Full-Stack
+                  Web Development bootcamp, specializing in JavaScript, HTML5, CSS,
+                  NodeJS, Express, MongoDB, and React. Additionally, I also possess
+                  substantial backend expertise, allowing me to approach projects
+                  comprehensively. I am eager for the opportunity to contribute to
+                  impactful projects with dedication and precision.
                 </div>
               </div>
             </Col>

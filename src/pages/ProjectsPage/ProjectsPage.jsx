@@ -48,10 +48,10 @@ const ProjectsPage = () => {
           <div className='underline mb-5'></div>
         </div>
         <Row className='ProjectsCards'>
-          {PROJECTS.map(elm => {
+          {PROJECTS.map((elm, index) => {
             return (
-              <Col md={4} className='cards'>
-                <ProjectCards {...elm} key={elm._id} />
+              <Col key={index} md={4} className='cards'>
+                <ProjectCards {...elm} />
               </Col>
             )
           })}

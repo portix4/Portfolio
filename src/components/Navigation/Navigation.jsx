@@ -28,7 +28,7 @@ const Navigation = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='ms-auto mt-3'>
+          <Nav className='ms-auto'>
             <Link
               to={'helloId'}
               spy={true}
