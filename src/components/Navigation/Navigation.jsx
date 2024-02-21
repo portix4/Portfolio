@@ -8,10 +8,12 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand='lg' className='bg-body-tertiary header sticky-top'>
       <Container>
-        <Navbar.Brand href='#home'>
+        <Navbar.Brand>
           <Row className='align-items-center'>
             <Col xs={6} md={3}>
-              <img className='profile-pic' src={personalLogo} alt='profile picture' />
+              <Link to={'helloId'}>
+                <img className='profile-pic' src={personalLogo} alt='profile picture' />
+              </Link>
               <Link
                 to={'helloId'}
                 spy={true}

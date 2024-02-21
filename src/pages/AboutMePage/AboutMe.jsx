@@ -32,7 +32,7 @@ const AboutMe = () => {
             <Col xl={6} className='who-i-am'>
               <div className='photo-and-text'>
                 <img src={ProfilePhoto} alt='Profile picture' />
-                <h3>Who am I?</h3>
+                <h3>Who I am?</h3>
                 <div className='my-description'>
                   Tech enthusiast turned Front-End Developer, holding a degree in
                   Application Development and boasting leadership experience as the head

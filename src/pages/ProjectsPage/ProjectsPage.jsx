@@ -9,6 +9,9 @@ import image2c from './../../assets/FlickMeet3.png'
 import image3 from './../../assets/CodeConnect1.png'
 import image3b from './../../assets/CodeConnect2.png'
 import image3c from './../../assets/CodeConnect3.png'
+import image4a from './../../asset/SociaLink1.png'
+import image4b from './../../asset/SociaLink2.png'
+import image4c from './../../asset/SociaLink3.png'
 
 const ProjectsPage = () => {
   const PROJECTS = [
@@ -17,7 +20,7 @@ const ProjectsPage = () => {
       src: [image1, image1b],
       description:
         '2D Arcade Game. In this project, the initial knowledge acquired with HTML, CSS, and JavaScript was applied. The challenge of this task is to work with the DOM and the creation of classes using JavaScript',
-      tools: 'HMTL5 | CSS | Javascript',
+      tools: 'HTML5 | CSS | Javascript',
       URL: 'https://portix4.github.io/IH-Project1-Game2D/'
     },
     {
@@ -26,7 +29,7 @@ const ProjectsPage = () => {
       description:
         'Movie rating website project that uses an external API as its primary database, integrates Express.js and MongoDB for server-side functionalities, and incorporates Handlebars for streamlined and dynamic views',
       tools:
-        'HMTL5 | CSS | Javascript | Mongoose | Handlebars.js | Postman | Express.js | MongoDB | Node.js',
+        'HTML5 | CSS | Javascript | Mongoose | Handlebars.js | Postman | Express.js | MongoDB | Node.js',
       URL: 'https://flickmeet2.fly.dev/'
     },
     {
@@ -35,8 +38,17 @@ const ProjectsPage = () => {
       description:
         'Online tutoring platform. Full Stack Application (MERN) using MongoDB for the database, Express and Node.js for the backend, and React for the frontend.',
       tools:
-        'HMTL5 | CSS | Javascript | Mongoose | Postman | Express.js | MongoDB | Node.js | ReactJS',
+        'HTML5 | CSS | Javascript | Mongoose | Postman | Express.js | MongoDB | Node.js | React.js',
       URL: 'https://code-connectt.netlify.app/'
+    },
+    {
+      name: 'SociaLink',
+      src: [image4a, image4b, image4c],
+      description:
+        'Online tutoring platform. Full Stack Application (MERN) using MongoDB for the database, Express and Node.js for the backend, and React for the frontend.',
+      tools:
+        'Vibrant social network hub. MERN-based platform leveraging MongoDB, Express, Node.js, and React. Connect, share, and explore in our dynamic community!',
+      URL: 'https://thesocialink.netlify.app/'
     }
   ]
 

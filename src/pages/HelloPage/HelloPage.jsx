@@ -17,7 +17,7 @@ const HelloPage = () => {
         </p>
         <div className='portfolioButton'>
           <Link
-            to='aboutMe'
+            to='projects'
             className='textButton'
             spy={true}
             smooth={true}
