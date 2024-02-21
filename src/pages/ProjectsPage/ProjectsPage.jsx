@@ -9,7 +9,7 @@ import image2c from './../../assets/FlickMeet3.png'
 import image3 from './../../assets/CodeConnect1.png'
 import image3b from './../../assets/CodeConnect2.png'
 import image3c from './../../assets/CodeConnect3.png'
-import image4a from './../../asset/SociaLink1.png'
+import image4a from './../../assets/SociaLink1.png'
 import image4b from './../../asset/SociaLink2.png'
 import image4c from './../../asset/SociaLink3.png'
 
