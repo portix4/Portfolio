@@ -77,7 +77,7 @@ const Navigation = () => {
 
             <a
               href={
-                'https://drive.google.com/file/d/186UL9yBT-19s1_SVo1THhTKBBpZbFS7j/view?usp=sharing'
+                'https://drive.google.com/file/d/1z1lrpjKA3jCMsv2ret9y9gSGa9N1QjB0/view?usp=sharing'
               }
               target='_blank'
               style={{ textDecoration: 'none' }}
